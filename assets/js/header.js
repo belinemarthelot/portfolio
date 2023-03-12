@@ -1,6 +1,7 @@
 function insertHeader() {
 	var headerContainer = document.getElementById('script-header-container');
 	var baseUrl = window.location.origin;
+	baseUrl += '/portfolio';
 	headerContainer.innerHTML = `
     <!-- Header -->
     <header id="header">
