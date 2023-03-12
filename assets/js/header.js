@@ -1,11 +1,7 @@
 function insertHeader() {
 	var headerContainer = document.getElementById('script-header-container');
-	var baseUrl = window.location.origin;
-    console.log("Before:")
-    console.log(baseUrl);
-    console.log("After:")
-	baseUrl += '/portfolio';
-    console.log(baseUrl);
+	// var baseUrl = window.location.origin;
+    var baseUrl = "https://belinemarthelot.github.io/portfolio"
 	headerContainer.innerHTML = `
     <!-- Header -->
     <header id="header">
