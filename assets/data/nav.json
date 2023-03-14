@@ -1,0 +1,25 @@
+{
+	"links": [
+		{ "title": "Page d'accueil", "url": "/" },
+		{
+			"title": "Année de prépa",
+			"url": "/pages/prepa.html",
+			"description": "Préparation au CAP ésthetique"
+		},
+		{
+			"title": "1er année de BTS",
+			"url": "/pages/first_year_bts.html",
+			"description": "Préparation au BTS MECP"
+		},
+		{
+			"title": "2ème année de BTS",
+			"url": "/pages/second_year_bts.html",
+			"description": "Préparation au BTS MECP"
+		},
+		{
+			"title": "Éxperiences profesionnels",
+			"url": "/pages/exp_pro.html",
+			"description": "Différents contrats CDD / extra"
+		}
+	]
+}
