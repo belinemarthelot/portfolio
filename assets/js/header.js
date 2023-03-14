@@ -1,5 +1,5 @@
-var baseUrl = window.location.origin;
-// var baseUrl = 'https://belinemarthelot.github.io/portfolio';
+// var baseUrl = window.location.origin;
+var baseUrl = 'https://belinemarthelot.github.io/portfolio';
 function insertNavbars() {
 	// Fetch the JSON data
 	fetch('/assets/data/nav.json')
