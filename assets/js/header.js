@@ -1,8 +1,12 @@
-// var baseUrl = window.location.origin;
-var baseUrl = 'https://belinemarthelot.github.io/portfolio';
+var baseUrl = window.location.origin;
+
+if(baseUrl.startsWith("https://")) {
+  baseUrl += '/portfolio'
+}
+
 function insertNavbars() {
 	// Fetch the JSON data
-	fetch('/assets/data/nav.json')
+	fetch(baseUrl + '/assets/data/nav.json')
 		.then((response) => response.json())
 		.then((data) => {
 			// Get the navbar element
@@ -53,7 +57,7 @@ function insertNavbars() {
 			elementsMainNavbar.innerHTML = `
             <ul>${elementsMainNavbarlinks}</ul>
            `;
-           elementsMenuNavbar.innerHTML = `
+			elementsMenuNavbar.innerHTML = `
            <ul class="links">${elementsMenuNavbarlinks}</ul>
           `;
 		});
