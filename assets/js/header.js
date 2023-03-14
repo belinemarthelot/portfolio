@@ -1,13 +1,12 @@
 var baseUrl = window.location.origin;
 
-console.log(baseUrl);
-
 if (baseUrl.startsWith('https://')) {
 	baseUrl += '/portfolio';
 }
 
 function insertNavbars() {
 	// Fetch the JSON data
+    console.log(baseUrl);
 	fetch(baseUrl + '/portfolio/assets/data/nav.json')
 		.then((response) => response.json())
 		.then((data) => {
