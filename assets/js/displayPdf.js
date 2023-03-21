@@ -46,7 +46,7 @@ function displayPdf(pdfUrl) {
 		// Get the PDF page to be rendered
 		pdf.getPage(pageNum).then(function (page) {
 			// Set the scale of the page to fit the canvas
-			var viewport = page.getViewport({ scale: 1.5 });
+			var viewport = page.getViewport({ scale: 1 });
 			canvas.width = viewport.width;
 			canvas.height = viewport.height;
 

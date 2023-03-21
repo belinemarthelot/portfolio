@@ -7,6 +7,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+#pdfContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#pdfCanvas {
+	margin-bottom: 20px;
+	width: 100%; /* set the width to 100% */
+	max-width: 800px; /* set a maximum width for the canvas */
+}
+
 html,
 body,
 div,
@@ -3691,14 +3703,4 @@ body.is-menu-visible #menu {
 	#menu > * {
 		padding: 1.5em;
 	}
-}
-
-#pdfContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-#pdfCanvas {
-	margin-bottom: 20px;
 }
