@@ -71,12 +71,17 @@
 						personnes qui prennent soin des autres, il était donc
 						logique de leur offrir un temps pour eux.
 					</p>
-					<embed
-						src="../../dossier_valmy.pdf#toolbar=0&navpanes=0&scrollbar=0"
-						type="application/pdf"
-						width="100%"
-						height="800px"
-					/>
+					<div id="pdfContainer">
+						<canvas id="pdfCanvas"></canvas>
+						<div>
+							<button id="prevPage">Previous Page</button>
+							<button id="nextPage">Next Page</button>
+						</div>
+						<div>
+							Page <span id="currentPage">1</span> of
+							<span id="totalPages"></span>
+						</div>
+					</div>
 				</article>
 			</div>
 
@@ -124,5 +129,10 @@
 		<script src="../../assets/js/util.js"></script>
 		<script src="../../assets/js/main.js"></script>
 		<script src="../../assets/js/header.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+		<script src="../../assets/js/displayPdf.js"></script>
+		<script>
+			displayPdf('../../assets/pdf/dossier_valmy.pdf');
+		</script>
 	</body>
 </html>

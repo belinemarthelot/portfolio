@@ -3692,3 +3692,13 @@ body.is-menu-visible #menu {
 		padding: 1.5em;
 	}
 }
+
+#pdfContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#pdfCanvas {
+	margin-bottom: 20px;
+}
