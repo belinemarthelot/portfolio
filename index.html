@@ -39,42 +39,82 @@
 				<!-- Post -->
 				<article class="post">
 					<header>
-						<div class="title" style="display: flex; flex-direction: column; align-items: center;
-						justify-content: center;">
-							<h2>
-								Portfolio
-							</h2>
-							<p>
-								Marthelot Béline
-							</p>
+						<div
+							class="title"
+							style="
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+							"
+						>
+							<h2>Portfolio</h2>
+							<p>Marthelot Béline</p>
 						</div>
 					</header>
 					<a class="image featured"
-						><img src="images/pic01.jpg" alt=""
+						><img src="images/collage_accueil.png" alt=""
 					/></a>
 					<p>
-						Béline Marthelot, 21 ans, élève en classe de 2ème année de BTS MECP (Métier Ésthétique Cosmétique Parfumerie). <br>
-						Bienvenue sur mon portfolio, il a été mis en place dans le but de vous présenter les compétences acquises lors de ma formation, 
-						les entreprises qui mon accueilli lors de mes stages durant ces trois années, 
-						ainsi que mes expériences professionnelles. 
+						Béline Marthelot, 21 ans, élève en classe de 2ème année
+						de BTS MECP (Métier Ésthétique Cosmétique Parfumerie).
+						<br />
+						Bienvenue sur mon portfolio, il a été mis en place dans
+						le but de vous présenter les compétences acquises lors
+						de ma formation, les entreprises qui mon accueilli lors
+						de mes stages durant ces trois années, ainsi que mes
+						expériences professionnelles.
 					</p>
-					<footer>
-						<ul class="actions">
-							<li>
-								<a class="button large"
-									>En savoir plus</a
-								>
-							</li>
-						</ul>
-					</footer>
+					<p>
+						Lors de mes 3 années d’études en esthétique j’ai eu
+						l’occasion de faire quelques stages afin de découvrir le
+						milieu du bien-être dans différents environnements. En
+						effet j’ai pu expérimenter le spa urbain, l’institut
+						traditionnel, le spa hôtelier, la parfumerie.
+					</p>
+					<p>
+						Chacune de ses expériences m’ont intéressé et apporté
+						des connaissances aussi bien dans les relations
+						clientèles qu’entre collègues, permis de me
+						perfectionner sur certaines techniques et en découvrir
+						de nouvelles. Les échanges avec les professionnels lors
+						de ces semaines m’ont permis d’appliquer les
+						connaissances et compétences que l’on nous a appris
+						pendant les cours.
+					</p>
+					<p>
+						Le métier de spa manager m'intéresse car il demande une
+						certaine polyvalence et organisation. Gérer le bon
+						fonctionnement du spa, s'assurer de la satisfaction de
+						la clientèle tout en soutenant et manageant son équipe,
+						ce sont des choses qui m'apportent de la motivation pour
+						effectuer une formation de CQP Spa Manager en
+						alternance.
+					</p>
+					<div id="pdfContainer">
+						<canvas id="pdfCanvas"></canvas>
+						<!-- <div>
+							<button id="prevPage">Page précédente</button>
+							<button id="nextPage">Page suivante</button>
+						</div> -->
+						<!-- <div>
+							Page <span id="currentPage">1</span> sur -->
+							<span style="display: none;" id="totalPages"></span>
+						<!-- </div> -->
+					</div>
 				</article>
-			<!-- Footer -->
-			<section id="footer" style="width: 100%; display: flex; justify-content: center;">
-				<p class="copyright">
-					&copy; Untitled. Design:
-					<a href="http://html5up.net">HTML5 UP</a>.
-				</p>
-			</section>
+
+				<!-- Footer -->
+				<section
+					id="footer"
+					style="width: 100%; display: flex; justify-content: center"
+				>
+					<p class="copyright">
+						&copy; Untitled. Design:
+						<a href="http://html5up.net">HTML5 UP</a>.
+					</p>
+				</section>
+			</div>
 		</div>
 
 		<!-- Scripts -->
@@ -84,5 +124,10 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/header.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+		<script src="./assets/js/displayPdf.js"></script>
+		<script>
+			displayPdf('./assets/pdf/cv.pdf');
+		</script>
 	</body>
 </html>
