@@ -2,7 +2,7 @@
 	"links": [
 		{ "title": "Page d'accueil", "url": "/" },
 		{
-			"title": "Année de prépa",
+			"title": "Année de prépa BTS",
 			"url": "/pages/prepa.html",
 			"description": "Préparation au CAP ésthetique"
 		},
