@@ -2466,6 +2466,12 @@ input[type='radio'] + label:before {
 	display: block;
 }
 
+.image.featured4 img {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
 @media screen and (max-width: 736px) {
 	.image.featured {
 		margin: 0 0 1.5em 0;
